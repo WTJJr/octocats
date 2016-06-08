@@ -1,0 +1,114 @@
+.octocat::after {
+	content: ""; 
+	border: 8px solid gainsboro;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: #dcdcdc transparent transparent transparent;
+	position: absolute;
+	right: 5px;
+	bottom: 37px;
+}
+/*Adds a triangle using a CSS Pseudo Element!*/
+
+.octodex {
+	padding-left: 0px;
+	margin-left: -10px;
+}
+
+.octocat {
+	width: 31%;
+	height:100%;
+	float: left;
+	list-style: none;
+	margin-left: 20px;
+	/*This puts all the container boxes inline with a 20px gap
+	between them.*/
+	border: 2px solid gainsboro;
+	/*Creates a border*/
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	/*This removes the border around the octocat boxes, EXCEPT for
+	the bottom border*/
+	position: relative;
+}
+
+.octocat img {
+	width: 100%;
+	border: 2px solid gainsboro;
+	border-radius: 5px;
+	padding: 0px;
+}
+
+
+
+.authors img {
+	height: 25px;
+	width: 25px;
+	border-radius: 5px;
+	border-width: 0px;
+/*Puts the author image on the far right side of the caption box*/
+
+}
+
+.authors {
+	list-style: none;
+	/*Removes bullets*/
+	float: right;
+	/*Moves the author img up on the same line as the caption txt and
+	floats image to the right.*/
+	padding-left: 5px;
+	position: relative;
+	bottom: 5px;
+	/*Aligns author img with the caption txt.*/
+}
+
+
+.image-number {
+	float: left;
+/* Places the image numbers on the left side of the caption box. Also
+allows the caption to appear on the same line as the image number.*/
+	margin-top: 10px;
+	/*Places small gap between caption and image box.*/
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	color: gainsboro;
+}
+
+.image-number::before {
+	content: "#";
+	font-style: italic;
+	font-color: gainsboro;
+	font-weight: bold;
+	font-size: 14px;
+}
+/*Adds a # to the image number.*/
+
+
+.image-caption {
+	position: relative;
+	float: right;
+	/* Places the caption text on the right side of the octocat box. */
+	margin-top: 10px;
+	/*Places gap between image box and caption box.*/
+}
+
+
+a {
+	text-decoration: none;
+	/*Removes underline from links*/
+	color: black;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+span {
+	color: gray;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 14px;
+}
